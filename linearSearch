@@ -1,0 +1,25 @@
+public class ArraysCC {
+    public static int linearSearch(int numbers[], int key){
+      for(int i=0; i<=numbers.length; i++){
+          if(key==numbers[i]){
+            return i;
+          }
+          }
+          return -1;
+      }
+    
+     public static void main(String[] args) {
+         int numbers[] = {2,4,16,34,54,33,10,9,78};
+         int key = 10;
+
+         int index = linearSearch(numbers, key);//function ko call kiya
+         if(index == -1){
+          System.out.println("Not Found");
+         }else{
+          System.out.println("key is at index :"+ index);
+         }
+     }
+    
+  }
+
+//key is at index :6
